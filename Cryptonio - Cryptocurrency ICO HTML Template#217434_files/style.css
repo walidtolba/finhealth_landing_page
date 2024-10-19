@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header area css*/
+
+.nav {
+  padding: 15px 0;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  border-top: 0;
+  background-color: #fff !important;
+  padding: 15px 0px;
+  border-bottom: none;
+  box-shadow: 0 10px 30px -10px rgb(0 64 128 / 20%);
+}
+
+.navbar img.logo-white {
+  width: 190px;
+}
+
+.navbar li.nav-item {
+  padding: 0 12px;
+}
+
+.navbar a.nav-link {
+  color: #212121;
+  font-weight: 500;
+}
+
+/*PRELOADING------------ */
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+section.slider-area {
+  padding-top: 100px;
+}
+
+.bg {
+  background-image: url(../images/bg-img.svg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.btn-main {
+  position: relative;
+  z-index: 1;
+  min-width: 160px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 3ox 20px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba(94, 39, 166, 1) 0%,
+    rgba(53, 0, 145, 1) 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(94, 39, 166, 1) 0%,
+    rgba(53, 0, 145, 1) 100%
+  );
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.btn-main:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+.theme-color {
+  color: #350091;
+}
+
+.e-card {
+  background-color: rgba(53, 0, 145, 1);
+  color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(94, 39, 166, 0.2);
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 10px 20px;
+  transition: all 0.3s;
+}
+
+.e-card:hover {
+  background-color: #fff;
+  color: #212121;
+  transition: all 0.3s;
+}
+
+.e-card .icon-box {
+  background-image: linear-gradient(
+    90deg,
+    rgba(94, 39, 166, 1) 0%,
+    rgba(53, 0, 145, 1) 100%
+  );
+  display: inline-block;
+  color: #fff;
+  height: 80px;
+  width: 80px;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: solid 10px #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.33);
+}
+
+.e-card .icon-box i {
+  line-height: 60px;
+  font-size: 20px;
+}
+
+/* roadmap css*/
+
+.timeline_wrap {
+  margin-top: 20px;
+  padding-top: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.timeline_wrap::before {
+  background-color: #350091;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.timeline_block {
+  display: inline-block;
+  position: relative;
+}
+
+.timeline_icon.tm_complete {
+  background-color: #350091;
+  color: #ffffff;
+}
+
+.timeline_icon {
+  background-color: #350091;
+  border-radius: 100%;
+  font-size: 12px;
+  height: 20px;
+  left: 50%;
+  line-height: 23px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translateX(-50%);
+  width: 20px;
+}
+
+.timeline_content {
+  position: relative;
+  text-align: right;
+  width: 47%;
+}
+
+.tm_date {
+  color: #350091;
+  font-weight: 600;
+  left: 113%;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: -3px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.timeline_block:nth-child(2n) .tm_date {
+  left: auto;
+  right: 113%;
+  text-align: right;
+}
+
+.timeline_block:nth-child(2n) .timeline_content {
+  float: right;
+  text-align: left;
+}
+
+section.footer {
+  background-color: #eef1f6;
+}
+
+.footer a {
+  color: #212121;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer a:hover {
+  color: #350091;
+  padding-left: 10px;
+  transition: all 0.2s;
+}
+
+.go-top.active {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  right: 3%;
+  top: 84%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  right: 3%;
+  top: 87%;
+  background-color: rgba(53, 0, 145, 1);
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 31%);
+  z-index: 4;
+  width: 45px;
+  text-align: center;
+  height: 45px;
+  line-height: 42px;
+  border-radius: 8px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  visibility: hidden;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.go-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #2081e2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.go-top i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+}
+
+.accordion-item {
+  transition: all 0.4s;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.accordion-button {
+  background-color: rgba(53, 0, 145, 1);
+  color: #fff;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: rgb(52 5 91);
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-body {
+  padding: 1rem 1.25rem;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.accordion-button::after {
+  background-image: url(../images/cruv.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/cruv.svg);
+}
+
+.accordion-button:focus {
+  border: 0;
+  box-shadow: none;
+}

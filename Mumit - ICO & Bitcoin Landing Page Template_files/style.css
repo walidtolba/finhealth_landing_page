@@ -1,0 +1,1667 @@
+/*
+Author       : Theme-Family
+Template Name: Mumit - ICO & Bitcoin Landing Page Template
+Version      : 1.0
+*/
+/*=============================================================
+    CSS INDEX
+    =============================
+    01. GENERAL STYLE (body, link color, SECTION TITLE, PRELOADER, BTN, SECTION PADDING etc)
+    02. START BOOTSTRAP NAVIGATION OVERRIDES
+    03. START HOME DESIGN
+    04. START CRYPCURRENCY DESIGN
+    05. START ABOUT DESIGN
+	06. START TIMELINE DESIGN
+    07. START FEATURE DESIGN
+    08. START VIDEO DESIGN
+    09. START SIGN IN DESIGN
+    10. START TEAM DESIGN
+    11. START FAQ DESIGN
+	12. START BLOG DESIGN
+	13. START TESTIMONIAL DESIGN (START COMPANY BRAND LOGO DESIGN )
+	14. START CONTACT DESIGN
+	15. START FOOTER DESIGN
+  =============================================================*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+body {
+	font-family: var(--thm-font);
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+	color:  var(--thm-black);
+}
+:root {
+	--thm-font: 'Poppins', sans-serif;
+	--thm-base: #1bcad3;
+	--thm-color: #5B86E5;
+	--thm-line: linear-gradient(to right,#c04848,#480048);
+	--thm-bg:  linear-gradient(-110deg,#f9f9f9 50%,#fff 50%);
+	--thm-black: #333333;
+	--thm-white: #ffffff;
+	--thm-ase: #afb2bf;
+	--thm-gray: #8e8e8e;
+	--thm-f6: #F1F8FF;
+	--thm-fb: #f6f6f6;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: inherit;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color: var(--thm-black);
+	clear: both;
+	font-family: var(--thm-font);
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0px;
+}
+h1, .h1 {
+  font-size: 36px;
+  line-height: 1.2; }
+
+h2, .h2 {
+  font-size: 30px; }
+
+h3, .h3 {
+  font-size: 24px; }
+
+h4, .h4 {
+  font-size: 20px; }
+
+h5, .h5 {
+  font-size: 18px; }
+
+h6, .h6 {
+  font-size: 16px; }
+  
+p:last-child {
+	margin-bottom: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+p {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	color: var(--thm-black);
+	line-height: 28px;
+	font-family: var(--thm-font);
+	font-weight: 400;
+	letter-spacing: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+a {
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+a:focus, .btn:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:hover, a:active {
+	color: var(--thm-color);
+	text-decoration: none;
+	outline: 0;
+}
+*, ::before, ::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+span {
+	letter-spacing: 0;
+}
+a, button, input {
+	outline: medium none;
+	color: inherit;
+}
+dl, ol, ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: transparent !important;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+::-webkit-input-placeholder {
+	color: inherit;
+}
+::-moz-input-placeholder {
+	color: inherit;
+}
+::-ms-input-placeholder {
+	color: inherit;
+}
+.page-wrapper {
+	position: relative;
+	overflow: hidden;
+	margin:0 auto;
+	min-width:300px;
+	z-index:11;
+}
+.form-group {
+	margin-bottom: 30px;
+	background: var(--thm-f6);
+}
+.atf-main-contact .form-group:focus {
+	border-color: var(--thm-color);
+	box-shadow: none;
+	outline: 0 none;
+}
+button, input, textarea {
+    color: var(--thm-black);
+}
+button, input, textarea:focus {
+    border: none;
+    outline:none;
+}
+.atf-color-ase{
+	color:var(--thm-ase)
+}
+.f-13 {
+	font-size: 13px;
+}
+.f-14 {
+	font-size: 14px;
+}
+.f-15 {
+	font-size: 15px;
+}
+.f-16 {
+	font-size: 16px;
+}
+.f-17 {
+	font-size: 17px;
+}
+.f-18{
+	font-size: 18px;
+}
+.f-19 {
+	font-size: 19px;
+}
+.f-20 {
+	font-size: 20px;
+}
+
+/*START PRELOADER DESIGN*/
+#atf-preloader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background: #fff;
+  overflow: hidden;
+}
+#atf-loader {
+  background: url(../img/1.gif);
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: 50%;
+  margin: -32px auto 0 auto;
+}
+/*END PRELOADER DESIGN*/
+
+/*START SECTION PADDING DESIGN*/
+
+.atf-section-padding {
+	padding: 90px 0;
+}
+
+/*START SECTION TITLE DESIGN*/
+
+.atf-section-title {
+	margin-bottom: 40px;
+}
+.atf-section-title h2 {
+	color: var(--thm-black);
+	text-transform: capitalize;
+	font-family: var(--thm-font);
+}
+.atf-section-title h5 {
+	color: var(--thm-color);
+	text-transform: Uppercase;
+	font-family: var(--thm-font);
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+.atf-section-title h3 {
+	text-transform:capitalize;
+	font-family:  var(--thm-font);
+}
+@media only screen and (max-width:480px) { 
+	.atf-section-title  h2  {font-size:25px;}
+}
+/*END SECTION TITLE DESIGN*/
+
+/*START SCROLL TO TOP*/
+
+.atf-scroll-top {
+	position: fixed;
+	right: 105%;
+	bottom: 70px;
+	z-index: 99;
+	cursor: pointer;
+	transition: 1.5s ease;
+	border: none;
+	background: transparent; }
+
+.atf-scrollup-icon {
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	background: var(--thm-color);
+	line-height: 50px;
+	color: var(--thm-white);
+	border-radius: 50%;
+}
+.atf-scrollup-icon:hover{
+	background: var(--thm-black);
+	transition:0.3s;
+}
+.atf-scroll-top.open {
+	right: 30px; }
+	
+/*END SCROLL TO TOP*/
+
+/* START BTN STYLE */
+.atf-themes-btn{
+    border-radius: 0;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+	padding: 10px 25px;
+}
+.atf-themes-btn:before{
+    content: "";
+    width: 25%;
+    height:0;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+.atf-themes-btn:after{
+    content: "";
+    width: 25%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+.atf-themes-btn span:before{
+    content: "";
+    width: 25%;
+    height:0;
+    position: absolute;
+    top: 0;
+    right: 25%;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+.atf-themes-btn span:after{
+    content: "";
+    width: 25%;
+    height:0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+.atf-themes-btn.purple{
+    border: 1px solid var(--thm-white);
+    color:var(--thm-white);
+}
+.atf-themes-btn.purple:hover:before,
+.atf-themes-btn.purple:hover:after,
+.atf-themes-btn.purple:hover span:before,
+.atf-themes-btn.purple:hover span:after{
+    background: var(--thm-color);
+    height:100%;
+}
+@media only screen and (max-width: 767px) {
+    .atf-themes-btn{
+        margin-bottom: 15px;
+    }
+}
+
+/* END BTN STYLE */	
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/	
+/*
+* ----------------------------------------------------------------------------------------
+* 02.START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+.navbar-navs{
+	transition: all .5s ease-in-out;
+	background-color: transparent;
+	padding-top: 1.563rem;
+	padding-bottom: 1.563rem;
+}
+.navbar-navs .navbar-collaps {
+	box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.09);
+}
+.navbar-navs.navbar-expend .menu-nav,
+.navbar-navs.navbar-collaps .menu-nav{
+	position: relative;
+	padding-right: 10px;
+	padding-left: 0;
+	margin-top:2px;
+}
+.navbar-navs.navbar-expend .menu-nav a,
+.navbar-navs.navbar-collaps .menu-nav a {
+	color: var(--thm-white);
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	font-family: var(--thm-font);
+}
+.navbar-navs.navbar-expend .menu-nav,
+.navbar-navs.navbar-collaps .menu-nav {
+	color: var(--thm-white);
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	font-family: var(--thm-font);
+}
+.navbar-navs.navbar-expend .menu-nav, .nav-link:hover, .nav-link:focus:hover,
+.navbar-navs.navbar-collaps .menu-nav, .nav-link:hover, .nav-link:focus:hover {
+	color: var(--thm-color);
+}
+.nav-link:hover, .nav-link:focus {
+	color: var(--thm-color) !important;
+}
+.navbar-navs .navbar-brand{
+	color: var(--thm-white);
+	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: var(--thm-font);
+	text-transform: uppercase;
+}
+.navbar-brand .logo {
+	width: 120px;
+	height: auto;
+}
+.navbar-navs.navbar-expend .menu-nav:hover {
+	color: var(--thm-color);
+}
+.navbar-navs.navbar-collaps .show > .nav-link, 
+.navbar-navs.navbar-collaps .active > .nav-link, 
+.navbar-navs.navbar-collaps .nav-link.show, 
+.navbar-navs.navbar-collaps .nav-link.active {
+	color: var(--thm-color);
+}
+.navbar-navs.navbar-expend .show > .nav-link, 
+.navbar-navs.navbar-expend .active > .nav-link, 
+.navbar-navs.navbar-expend .nav-link.show, 
+.navbar-navs.navbar-expend .nav-link.active {
+	color: var(--thm-white);
+}
+.navbar-navs.navbar-collaps {
+	transition: all .5s ease-in-out;
+	background: var(--thm-black);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.09);
+	box-shadow: 0px 6px 9px 0px rgba(240, 234, 234, 0.09);
+}
+.navbar-navs.navbar-collaps .menu-nav {
+	color: var(--thm-white);
+}
+.navbar-navs.navbar-collaps .menu-nav:hover {
+	color: var(--thm-color);
+}
+
+.navbar-navs.navbar-collaps .show > .menu-nav, .navbar-navs.navbar-collaps .active > .menu-nav, .navbar-navs.navbar-collaps .menu-nav.show, .navbar-navs.navbar-collaps .menu-nav.active {
+	color: var(--thm-color);
+}
+
+.navbar-navs.navbar-collaps .navbar-expand {
+	color: var(--thm-white);
+}
+.navbar-navs.navbar-collaps .navbar-toggler span {
+	background: var(--thm-white);
+	border: 1px solid var(--thm-white);
+}
+.navbar-navs .navbar-expand {
+	color: var(--thm-gray);
+	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: var(--thm-font);
+	text-transform: uppercase;
+}
+.navbar-navs .navbar-nav .dropdown-item.show .dropdown-menu, .navbar-navs .dropdown.show .dropdown-menu, .navbar-navs .dropdown-btn.show .dropdown-menu {
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+	visibility: visible !important;
+}
+.navbar-navs .dropdown-menu {
+	margin: 1.12rem 0 0;
+	border-radius: 0;
+}
+.navbar-navs .dropdown-menu .dropdown-item {
+	padding: .7rem 1.7rem;
+	transition: all 500ms ease;
+}
+.navbar-navs .dropdown-menu .dropdown-item:hover {
+	background: var(--thm-base);
+	color: var(--thm-white);
+	transition: all 500ms ease;
+}
+.navbar-navs .dropdown-menu .dropdown-item.active {
+	background: var(--thm-base);
+}
+.navbar-toggler {
+	position: relative;
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+	outline: 0;
+}
+.navbar-toggler span {
+	display: block;
+	background: var(--thm-white);
+	border: 1px solid var(--thm-white);
+	height: 3px;
+	width: 25px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	left: 0;
+	opacity: 1;
+}
+.navbar-toggler span:nth-child(1), .navbar-toggler span:nth-child(3) {
+	transition: -webkit-transform .35s ease-in-out;
+	transition: transform .35s ease-in-out;
+	transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+	position: absolute;
+	left: 12px;
+	top: 10px;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+	opacity: 0.9;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+	height: 12px;
+	visibility: hidden;
+	background-color: transparent;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+	position: absolute;
+	left: 12px;
+	top: 10px;
+	-webkit-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	opacity: 0.9;
+}
+.navbar-nav .atf-themes-btn {
+	border-radius: 5px;
+	padding: 8px 18px !important;
+	margin-top: -2px;
+	color:var(--thm-white)! important;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#home {
+	position: relative;
+	z-index: 1;
+}
+.atf-hero-area {
+    background: var(--thm-f6);
+    height: 750px;
+    overflow: hidden;
+	z-index: 1;
+}
+.atf-hero-area::before {
+	content: '';
+	position: absolute;
+	right: 0px;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	z-index: -1;
+}
+.atf-home-overlay {
+	background: rgba(0,0,0,0.4);
+	height: 100%;
+	width: 100%;
+}
+.atf-align-items-details {
+	display: flex;
+	align-items: center;
+	min-height: 100%;
+}
+.atf-content-details h5 {
+	color: var(--thm-color);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	text-transform: capitalize;
+}
+.atf-single-details h2 {
+	color: var(--thm-color);
+	text-transform: capitalize;
+	font-weight: 700;
+	font-family: var(--thm-font);
+	font-size: 45px;
+	letter-spacing: 0.7px;
+	line-height: 55px;
+}
+.atf-single-details p {
+	color: var(--thm-black);
+	font-size: 16px;
+	margin: 25px 0 40px;
+	font-size: 17px;
+	line-height: 1.8;
+	margin: 22px 0 20px;
+	padding-right: 50px;
+}
+.atf-single-details  p {
+	-webkit-animation: 1.7s .7s fadeInLeft both;
+	animation: 1.7s .7s fadeInLeft both; }
+
+.atf-single-details  h2 {
+	-webkit-animation: 1.7s .7s fadeInLeft both;
+	animation: 1.7s .7s fadeInLeft both; }
+
+.atf-single-details .atf-main-btn{
+	-webkit-animation: 1.7s 2s fadeInUp both;
+	animation: 1.7s 2s fadeInUp both; }
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 04.START CRYPCURRENCY DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#cryptocurrency{
+	background:var(--thm-fb);
+}
+#p_cryptocurrency{
+	background:var(--thm-black);
+}
+#cryptocurrency .atf-section-title{
+	margin-bottom:0px;
+}
+#p_cryptocurrency .atf-stock-market-price .atf-market-rate {
+	padding: 0px 0px;
+}
+.atf-stock-market-price .atf-market-rate {padding: 10px 15px;}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	padding: 20px 5px 20px 35px;
+	position: relative;
+	margin: 10px 0;
+}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper {
+	text-align: left;
+	font-size: 18px;
+}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .atf-cryp-amount {
+	font-family: var(--thm-font);
+	font-size: 18px;
+	color: #1a1a1a;
+	padding-bottom: 7px;
+}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .atf-cryp-title {
+	font-size: 20px;
+	font-weight: 700;
+}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .atf-cryp-current-info {
+	margin-top: 25px;
+	font-size: 20px;
+}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .atf-cryp-current-info.range-down {color: #ff4c2f;}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .atf-cryp-current-info.range-up {color: #08dd67;}
+
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .icon {
+	font-size: 16px;
+}
+.atf-cryp-title .icon {
+	background: var(--thm-color);
+	color: var(--thm-white);
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	line-height: 24px;
+	text-align: center;
+}
+.atf-cryp-title .icon1{line-height: 16px ! important;}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .atf-cryp-rate {
+  display: block;
+  position: relative;
+} 
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .atf-cryp-rate::before {
+	content: '';
+	width: 100%;
+	height: 4px;
+	position: absolute;
+	top: -16px;
+	left: 0;
+}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .range-down .atf-cryp-rate::before {
+	background: linear-gradient(90deg, rgb(53, 120, 191) 10%, rgba(255,255,255,1) 100%);
+}
+.atf-stock-market-price .atf-market-rate .atf-cryp-main-wrapper .range-up .atf-cryp-rate:before {background: linear-gradient(90deg, rgb(8,221,103) 10%, rgba(255,255,255,1) 100%);}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.END CRYPCURRENCY DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 05.START ABOUT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#about .atf-section-title{
+	margin-bottom:25px;
+}
+.atf-about-content h5 {
+	line-height: 28px;
+}
+.atf-main-services{
+	margin:15px 0;
+}
+.atf-single-about {
+	padding: 10px 0px;
+	border-radius: 0px;
+}
+.atf-about-icon {
+	display: inline-block;
+	transition: .5s ease;
+	margin-top: 6px;
+}
+.atf-about-icon i {
+	color: var(--thm-color);
+	font-size: 20px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	background: var(--thm-f6);
+	padding: 10px 14px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+}
+.atf-about-text h3 {
+	padding: 0px 0 5px 0;
+	font-weight: 700;
+}
+.atf-chat-area{
+	margin:0;
+	padding:0;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 05.END ABOUT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 9.START TIMELINE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#atf-timeline{
+	
+}
+.atf-roadmap {
+  overflow: hidden;
+}
+.atf-roadmap .owl-carousel .owl-stage-outer {
+    overflow: unset;
+}
+.atf-roadmap-border {
+	margin-top: 50px;
+	border-bottom: 2px solid var(--thm-color);
+}
+.atf-roadmap-box {
+  text-align: center;
+  position: relative;
+  margin-top: -10px;
+}
+.atf-roadmap-round{
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--thm-color);
+  border-radius: 100%;
+  position: relative;
+  background:var(--thm-color);
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.atf-roadmap-round span {
+  background: var(--thm-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.atf-roadmap-slider .main-box .map-graphic {
+  overflow: hidden;
+}
+.atf-roadmap-box{
+    overflow: hidden;
+}
+.atf-roadmap-border-left {
+	border-left: 1px solid var(--thm-color);
+	height: 40px;
+	position: relative;
+	left: 50%;
+	margin-left: -1px;
+}
+.atf-roadmap-border-left::before {
+  content: "";
+  background: var(--thm-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -6px;
+}
+.atf-roadmap-slider .atf-main-roadmap {
+  padding: 0 15px;
+}
+.atf-roadmap-content {
+  max-width: 260px;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 100%;
+}
+.atf-roadmap-title {
+	font-weight: 700;
+	color: var(--thm-black);
+}
+.atf-roadmap-date {
+  padding-bottom: 10px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 09.End TIMELINE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 08.START FEATURE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#feature{
+	background: var(--thm-fb);
+}
+.atf-main-feature{
+	margin:15px 0;
+}
+.atf-feature-content{
+	position:relative;
+}
+.atf-feature-number {
+	position: absolute;
+	right: 30px;
+	font-size: 80px;
+	opacity: 0;
+	top: 0px;
+	font-weight: 700;
+	transition: .5s ease;
+}
+.atf-feature-content:hover .atf-feature-number{
+	opacity: 0.1;
+}
+.atf-feature-text h3 {
+	padding: 15px 0 10px 0;
+	color: var(--thm-black);
+	letter-spacing: 1px;
+}
+.atf-feature-text {
+	padding-right: 5px;
+}
+.atf-single-feature {
+	border: none;
+	border-radius: 0px;
+}
+.atf-feature-content {
+	padding: 35px 25px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	background: var(--thm-white);
+}
+.atf-feature-icon {
+	display: inline-block;
+	transition: .5s ease;
+}
+.atf-feature-icon i {
+	color: var(--thm-color);
+	font-size: 45px;
+	text-align: center;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 08.END FEATURE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 09.START VIDEO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/**************************************
+ * START HOT DEAL DESIGN
+ *************************************/
+.atf-hot-deal-area{
+	position: relative;
+}
+.atf-hot-deal-area::before {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	/* background: rgba(0,0,0,0.4); */
+}
+.atf-hot-deal-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  
+}
+.atf-hot-deal-content .atf-sub-title {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 12px;
+	color: var(--thm-black);
+	background: rgba(225,225,225,0.3);
+	display: inline-block;
+	padding: 5px 12px;
+	border-radius: 4px;
+}
+.atf-hot-deal-content h2 {
+	font-size: 30px;
+	line-height: 1.2;
+	margin-bottom: 25px;
+	color: var(--thm-black);
+}
+.atf-hot-deal-content h2 span {
+    color: var(--thm-black);
+}
+
+.atf-hot-deal-content #atf-timer {
+    margin-bottom: 30px;
+}
+
+.atf-hot-deal-content #atf-timer div {
+	width: 105px;
+	height: 105px;
+	border-radius: 50px;
+	color: var(--thm-color);
+	background-color: #f0f0fa;
+	font-size: 30px;
+	font-weight: 600;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.atf-hot-deal-content #atf-timer div span {
+    display: block;
+    margin-top: 0;
+    color: var(--thm-color);
+    font-size: 15px;
+    font-weight: 600
+}
+.atf-singl-video {
+	position:relative;
+}
+.atf-singl-video .waves-box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 999;
+}
+.atf-singl-video .iq-video {
+	background: var(--thm-white);
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	font-size: 20px;
+	color: var(--thm-white);
+	border-radius: 100%;
+	line-height: 53px;
+	z-index: 9;
+	position: relative;
+	border: 8px solid var(--thm-color);
+}
+.atf-singl-video .iq-video i {
+	margin-left: 3px;
+	color: var(--thm-color);
+}
+.atf-singl-video .iq-waves {
+	position: absolute;
+	left: -30px;
+	top: -30px;
+	z-index: 2;
+}
+.atf-singl-video .iq-waves .wave-1 {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+.atf-singl-video .iq-waves .waves {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	background: rgba(234 237 249 / 50%);
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	border-radius: 50%;
+	background-clip: padding-box;
+	-webkit-animation: waves 3s ease-in-out infinite;
+	animation: waves 3s ease-in-out infinite;
+}
+.atf-singl-video .iq-waves .wave-1 {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+.atf-singl-video .iq-waves .wave-2 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.atf-singl-video .iq-waves .wave-3 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+@-webkit-keyframes waves {
+	0% {
+		-webkit-transform: scale(0.2, 0.2);
+		transform: scale(0.2, 0.2);
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+	50% {
+		opacity: 0.9;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	}
+	100% {
+		-webkit-transform: scale(0.9, 0.9);
+		transform: scale(0.9, 0.9);
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+}
+@keyframes waves {
+	0% {
+		-webkit-transform: scale(0.2, 0.2);
+		transform: scale(0.2, 0.2);
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+	50% {
+		opacity: 0.9;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	}
+	100% {
+		-webkit-transform: scale(0.9, 0.9);
+		transform: scale(0.9, 0.9);
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 09.END VIDEO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 10.START SIGN IN DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#atf_sign_In{background:var(--thm-black);}
+.atf-sign-btn .atf-themes-btn{
+	margin-top:-3px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 10.END SIGN IN DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 11.START TEAM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.our-team{
+    text-align: center;
+    background: var(--thm-bg);
+    border-radius: 353px 353px 0 0;
+    transition: all 0.3s ease 0s;
+}
+.our-team:hover{
+    background: var(--thm-color);
+}
+.our-team .pic{
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+.our-team .pic:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--thm-black);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic:before{
+    opacity: 0.5;
+}
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+}
+.our-team .team-content{
+    padding: 30px 0;
+}
+.our-team .title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--thm-black);
+    margin: 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 16px;
+    color: var(--thm-black);
+    margin-bottom: 16px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.our-team .social li:last-child{
+    margin-right: 0;
+}
+.our-team .social a {
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	font-size: 16px;
+	color: #404041;
+	background: rgba(255,255,255, 0.5);
+	line-height: 33px;
+	transition: all 0.3s ease 0s;
+}
+.our-team .social a:hover{
+    background: #151515;
+    color: var(--thm-white);
+}
+@media only screen and (max-width: 991px){
+    .our-team{ margin-bottom: 30px; }
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 11.END TEAM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12.START FAQ DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#faq {
+	background: var(--thm-bg);
+	background-size: 30px 30px;
+	font-family: var(--thm-font);
+	box-shadow: 7px 7px 5px rgba(9,132,227,0.1);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: var(--thm-white);
+	background: var(--thm-color);
+	border-radius: 7px;
+	transition:all 0.3s ease-in-out;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+	border: none !important;
+	color: var(--thm-white) !important;
+	background: var(--thm-color);
+	border-radius: 7px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+.nav-fill .nav-item {
+	font-size: 22px;
+	font-family: var(--thm-font);
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+.nav-tabs .nav-link {
+	border: none !important;
+}
+.nav-tabs {
+	border-bottom: none !important;
+	margin-bottom: 25px;
+	color:var(--thm-black);
+}
+#download .atf-section-title{margin-bottom:20px;}
+.atf-download-text p {
+	margin-top: 14px;
+	font-weight: 600;
+}
+.atf-download-btn  .purple{
+	border: 1px solid var(--thm-color)! important;
+	color: var(--thm-black)! important;
+}
+.atf-download-btn  .purple:hover{color: var(--thm-white)! important;}
+.atf-single-download .icon{
+	font-size:20px;
+	color:var(--thm-color);
+}
+.atf-single-download li {
+	padding: 7px 0;
+	font-weight: 500;
+	font-size: 16px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 12.END FAQ DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 13.START BLOG DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#blog{
+	background: var(--thm-fb); 
+ }
+.atf-blog-area .atf-single-blog {
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.atf-blog-area .atf-single-blog .atf-blog-content {
+	padding: 30px 25px 45px;
+	background: var(--thm-bg);
+}
+.atf-blog-icon i{
+	color: var(--thm-color); 
+}
+.atf-post-img .atf-blog-tag a {
+	overflow: hidden;
+	position: relative;
+}
+.atf-blog-area .atf-single-blog:hover img {
+  -webkit-filter: none;
+  filter: none;
+  -webkit-transform: scale(1.02, 1.02);
+  transform: scale(1.02, 1.02);
+}
+.atf-blog-area .atf-single-blog img {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.atf-blog-content .atf-blog-tag {
+	font-weight:500;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.atf-blog-content .atf-blog-time {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.atf-single-blog .atf-blog-content h4 {
+	padding-top: 15px;
+	line-height: 32px;
+}
+.atf-single-blog .atf-blog-content p {
+	padding: 4px 0 15px;
+}
+.atf-blog-tag:hover,
+.atf-blog-time:hover{
+	color: var(--thm-color);
+}
+.atf-blog-btn .atf-themes-btn:hover{
+	color: var(--thm-color);
+}
+.atf-blog-btn .atf-themes-btn {
+	color: var(--thm-black);
+	box-shadow: 0 0 0 0 #496dff !important;
+	background: transparent;
+	border-radius: 0;
+}
+.atf-blog-date i{
+	color: var(--thm-color);
+}
+.atf-blog-btn{
+	margin-top:30px;
+}
+.atf-single-blog{margin:15px 0;}
+/*
+* ----------------------------------------------------------------------------------------
+* 13.END BLOG DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 14.START TESTIMONIAL DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#testimonial{
+	 background: var(--thm-black);
+}
+.testimonial{
+    background: #fff;
+    text-align: center;
+    padding: 30px 30px 50px;
+    margin: 0 15px 100px;
+    position: relative;
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    border-top: 40px solid #fff;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+.testimonial:after{
+    border-right: none;
+    border-left: 125px solid transparent;
+    left: auto;
+    right: 0;
+}
+.testimonial .icon {
+	display: inline-block;
+	font-size: 40px;
+	color: var(--thm-color);
+	margin-bottom: 20px;
+	opacity: 0.6;
+}
+.testimonial .description{
+    text-align: left;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.testimonial .pic{
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #daad86;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title {
+	font-weight: bold;
+	color: #fff;
+	text-transform: capitalize;
+	margin: 0px 0 -9px 0;
+	font-size: 15px;
+}
+.testimonial .post {
+	display: block;
+	font-size: 14px;
+	color: var(--thm-white);
+	margin-top: 10px;
+}
+.owl-theme .owl-controls{
+    margin-top: 0;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 32px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #bd986b;
+    margin: 5px;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #ffd9b8;
+    border-color: #fff;
+}
+@media only screen and (max-width: 650px) and (min-width: 400px){
+    .testimonial:before{ border-right: 325px solid transparent; }
+    .testimonial:after{ border-left: 325px solid transparent; }
+}
+/* owl theme */
+.atf-main-testimonials.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 60px;
+    line-height: .7;
+}
+.atf-main-testimonials.owl-theme .owl-dots .owl-dot span {
+	width: 15px;
+	height: 7px;
+	margin: 0 8px;
+	border-radius: 5%;
+	background: transparent;
+	border: 1px solid var(--thm-white);
+}
+.atf-main-testimonials.owl-theme .owl-dots .owl-dot.active span, .atf-main-testimonials.owl-theme .owl-dots .owl-dot:hover span {
+	background: var(--thm-color);
+	border: 1px solid var(--thm-color);
+	margin-top: 35px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* START COMPANY BRAND LOGO DESIGN  
+* ----------------------------------------------------------------------------------------
+*/
+#atf-brand-area {
+	background:var(--thm-f6);
+}
+#atf-brand-area .atf-section-padding {
+	margin-bottom:40px;
+}
+
+#atf-brand-area .owl-controls {
+	display:none;
+}
+.atf-brand-active{ text-align: center }
+.atf-brand-active > a { display:inline-block}
+/*
+* ----------------------------------------------------------------------------------------
+* END COMPANY BRAND LOGO DESIGN 
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 14.END TESTIMONIAL DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 15.START CONTACT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+#contact-form .button {
+    margin: 0;
+}
+.contact-area .form input,
+.contact-area .form textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: 0;
+    background: var(--thm-gray);
+    font-weight: 400;
+    border-radius: 5px;
+}
+.contact-area .form textarea {
+    max-height: 120px;
+    max-width: 100%;
+}
+.contact-details p {
+	color: var(--thm-black);
+	margin-top: 4px;
+}
+.contact-details {
+	text-align: left;
+	display: block;
+	overflow: hidden;
+}
+.contact-details {
+	margin: 15px 0;
+	padding: 0px 0 20px;
+}
+.contact-details i {
+	font-size: 17px;
+	width: 40px;
+	height: 40px;
+	background: var(--thm-base);
+	line-height: 40px;
+	color: var(--thm-white);
+	text-align: center;
+	float: left;
+	margin-bottom: 0;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.contact-details h5 {
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.contact-area .form-message.success {
+    background: var(--thm-base);
+    color: var(--thm-white);
+    padding: 10px 15px;
+    border-radius: 3px;
+}	  
+.contact-area .form-message.error {
+    background: var(--thm-base);
+    color: var(--thm-white);
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+.contact-details p {
+	font-weight: 500;
+	text-transform: capitalize;
+	display: block;
+	overflow: hidden;
+}
+
+.atf-contact-area .form input, .atf-contact-area .form textarea {
+	width: 100%;
+	padding: 10px 20px;
+	border: 0;
+	background-color: transparent;
+	font-weight: 400;
+	color: var(--thm-black);
+	box-shadow: 0 0px 1px rgb(19, 19, 19);
+}
+.atf-contact-area .form textarea {
+    max-height: 120px;
+    max-width: 100%;
+	color: var(--thm-black);
+}
+.form-message{
+	color: var(--thm-black);
+}
+.atf-contact-btn .atf-themes-btn {
+	color: var(--thm-white);
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 15.END CONTACT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 16.START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.atf-footer-area {
+	background: var(--thm-black);
+}
+.atf-footer-boottom {
+	padding: 30px 0;
+	background: var(--thm-black);
+	opacity: 0.6;
+}
+.atf-footer-box p {
+    color: var(--thm-white);
+    margin-bottom: 20px;
+}
+.atf-footer-social-icon a i:hover{
+	background:var(--thm-white);
+	transition:all .3s;
+	-webkit-transition:all .3s;
+	color: var(--thm-color);
+}
+.atf-footer-social-icon a i {
+	font-size: 14px;
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	color: var(--thm-white);
+	background: #ff8a00;
+	text-align: center;
+	background: var(--thm-color);
+}
+.atf-footer-area .atf-footer-link {
+	position: relative;
+}
+.atf-footer-area .atf-footer-link::after {
+	content: '';
+	position: absolute;
+	left: 16px;
+	top: 33px;
+	background: var(--thm-color);
+	width: 45px;
+	height: 3px;
+}
+.atf-footer-link h5 {
+	margin-bottom: 35px;
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--thm-white);
+}
+.atf-footer-link .atf-list-menu li a {
+    color: var(--thm-white);
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.atf-footer-link .atf-list-menu li a:hover {
+	color: var(--thm-color);
+	padding-left: 4px;
+	transition: 0.5s;
+	-webkit-transition:0.5s;
+}
+.atf-footer-link .atf-list-menu li a span {
+    position: relative;
+    display: block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    font-weight: 500;
+    font-family: var(--thm-font);
+}
+.atf-footer-boottom p {
+	color: var(--thm-white);
+}
+.atf-footer-boottom a {
+	color: var(--thm-f6);
+	font-weight: 700;
+}
+.atf-footer-boottom  a:hover{
+	color:  var(--thm-color);
+}
+.atf-footer-subscribe form input {
+	background-color: rgb(248, 248, 253);
+	color: var(--thm-black);
+	border: none;
+	width: 100%;
+	height: 45px;
+	padding-left: 15px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+.atf-footer-subscribe  .atf-themes-btn {
+    margin-top: 25px;
+}
+.atf-footer-subscribe .atf-subscription-label {
+	color: var(--thm-white);
+	margin-top: 20px;
+}
+.atf-contact-btn.atf-download-btn.text-center button {
+	width: 100%;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 16.END FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+@media (min-width: 200px) and (max-width: 991px) {
+	.navbar-collapse {
+		overflow: auto;
+		max-height: calc(100vh - 80px);
+	}
+	
+}
